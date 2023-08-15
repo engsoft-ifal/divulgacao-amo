@@ -1,0 +1,82 @@
+:root {
+    --back-blue: #000338;
+    --blue-200: #456CFA;
+    --white: #F1F5F9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div#root {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background: var(--back-blue);
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Seções do main (CONFIG) */
+section {
+    height: 100vh;
+    width: 100%;
+    color: black;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #030525; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d4c6c6; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
