@@ -12,8 +12,12 @@
     text-align: center;
 }
 
+.first {
+    height: 100vh;
+}
+
 .mod {
-    width: 700px;
+    width: 70%;
 }
 
 /* Primeira seção */
@@ -29,8 +33,16 @@
     gap: 100px;
 }
 
-.first > h1 {
-    font-size: 3em;
+.first #forms {
+    width: 40%;
+}
+
+.first img {
+    width: 90%;
+}
+
+.first h1 {
+    font-size: 2em;
 }
 
 .first > div {
@@ -54,15 +66,17 @@
 .second .divider {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
 }
 
 .second .divider > img {
-    width: 300px;
+    width: 50%;
+    max-width: 400px;
 }
 
 .second .divider .content-text {
-    width: 500px;
+    width: 70%;
+    max-width: 600px;
 }
 
 .second .divider .content-text > h3 {
@@ -103,8 +117,12 @@
     background: var(--back-blue);
     color: var(--white);
     gap: 100px;
-    width: 300px;
-    height: 300px;
+    width: 70%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 30px;
     border-radius: 30px;
 }
@@ -121,10 +139,11 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    width: 700px;
     padding: 30px;
+    width: 20%;
     border-radius: 30px;
     margin-top: 50px;
+    margin-bottom: 150px;
 }
 
 .fourth .know-more span {
@@ -133,7 +152,7 @@
 
 .fourth .know-more a {
     background: var(--blue-200);
-    width: 300px;
+    width: 80%;
     padding: 10px;
     border-radius: 35px;
     transition: 0.2s ease-in-out;
@@ -175,6 +194,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
     row-gap: 60px;
+    place-items: center;
     /* color: black; */
 }
 
@@ -183,6 +203,7 @@
     background: var(--back-blue);
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 25px;
     padding: 30px;
     border-radius: 30px;
@@ -190,7 +211,6 @@
 
 .fifth .box-baloons .baloons > a {
     background: var(--blue-200);
-    width: 250px;
     padding: 10px;
     border-radius: 35px;
     transition: 0.2s ease-in-out;
@@ -221,8 +241,29 @@
 }
 
 .sixth .divider > img {
-    width: 600px;
+    width: 70%;
+    max-width: 700px;
     background: var(--back-blue);
     padding: 20px;
     border-radius: 30px;
+}
+
+/* MEDIA QUERIE */
+@media only screen and (max-width: 1140px) {
+    .first,
+    .second .divider,
+    .third .text-atividades,
+    .sixth .divider {
+        flex-direction: column;
+    }
+
+    .fifth .box-baloons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .fifth .box-baloons {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
