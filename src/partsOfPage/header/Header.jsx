@@ -1,35 +1,35 @@
+import logoAmo from '../../../public/logoNav.png';
+import IconLogin from '../../../public/login.png';
 import HeaderStyles from './header.module.css';
-import Logo from '../../images/Logo.png';
-import IconLogin from '../../images/loginicon.png';
 
 export function Header() {
     return (
         <header className={HeaderStyles.header}>
             <nav className={HeaderStyles.nav}>
-                {/* Imagem da logo */}
-                <a href="../../">
-                    <img src={Logo} alt="Logo da AMO" 
-                        className={HeaderStyles.img}
-                    />
-                </a>
-
-                {/* Links do próprio site */}
-                <ul className={HeaderStyles.ul}>
-                    <li><a href="#oprojeto">O projeto</a></li>
-                    <li><a href="#inscreva-se">Inscreva-se</a></li>
-                    <li><a href="#equipe">Equipe</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-                
+                <div className={HeaderStyles.logoBar}>
+                    {/* Imagem da logo */}
+                    <a href="#">
+                        <img src={logoAmo} alt="Logo da AMO"
+                            className={HeaderStyles.img}
+                        />
+                    </a>
+                    {/* Links do próprio site */}
+                    <ul className={HeaderStyles.ul}>
+                        <li><a href="#treinamentos">Treinamento</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#projeto">O Projeto</a></li>
+                    </ul>
+                    
+                </div>
                 {/* Links para a página de Login e Registro */}
                 <div className={HeaderStyles.loginRegister}>
                     <a href="#">
                         <img src={IconLogin} alt="Icone de Login" />
                         Entrar
                     </a>
-                    <a href="#">Criar Conta</a>
+                    <a href="#">Cadastrar</a>
                 </div>
             </nav>
         </header>
-    )
+    );
 }

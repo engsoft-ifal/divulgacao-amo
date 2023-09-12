@@ -1,58 +1,41 @@
-import FooterStyles from '../footer/footer.module.css';
+import ifal from '../../../public/apoio/ifal.png';
+import fapeal from '../../../public/apoio/fapeal.png';
+import fapealsecti from '../../../public/apoio/fapealsecti.png';
+import pibicjr from '../../../public/apoio/pibicjr.png';
+import cpsoftware from '../../../public/apoio/cpsoftware.png';
 
-//Redes Sociais
-import Facebook from '../../images/Midias/facebook.svg';
-import Instagram from '../../images/Midias/instagram.svg';
-import Linkedin from '../../images/Midias/linkedin.svg';
-import Twitter from '../../images/Midias/twitter.svg';
-// Logo dos Patrocinadores
-import CPSoftware from '../../images/patrocinadores/cpsoftware.png';
-import FapealSecti from '../../images/patrocinadores/fapealsecti.png';
-import Fapeal from '../../images/patrocinadores/fapeal.png';
-import PibicJr from '../../images/patrocinadores/pibicjr.png';
-import Ifal from '../../images/patrocinadores/ifal.png';
+import facebook from '../../../public/midias/facebook.svg';
+import instagram from '../../../public/midias/instagram.svg';
+import linkedin from '../../../public/midias/linkedin.svg';
+import twitter from '../../../public/midias/twitter.svg';
+
+import FooterStyle from './footer.module.css'
 
 export function Footer() {
     return (
         <>
-        <div className={FooterStyles.parceiros} id="contato">
-            <div className={FooterStyles.boxText}>
-                <h2>Parceiros</h2>
-            </div>
-            <div className={FooterStyles.logos}>
-                <img src={CPSoftware} alt="Logo da CPSoftware" />
-                <img src={FapealSecti} alt="Logo da Fapeal Secti" />
-                <img src={Ifal} alt="Logo do IFAL" />
-                <img src={Fapeal} alt="Logo da Fapeal" />
-                <img src={PibicJr} alt="Logo da Pibic JR" />
-            </div>
-        </div>
-
-        <div className={FooterStyles.contacteNos}>
-            <div className={FooterStyles.boxText}>
-                <h2>Contacte-nos</h2>
-            </div>
-            <div className={FooterStyles.informations}>
-                <p>
-                    Para mais informações entre em contato com a gente e nos siga nas redes sociais.
-                </p>
-                <div className={FooterStyles.midias}>
-                    <a href="https://www.facebook.com/amoifal/">
-                        <img src={Facebook} alt="Logo do Facebook" />
-                    </a>
-                    <a href="https://twitter.com/amoifal">
-                        <img src={Twitter} alt="Logo do Twitter" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/amoifal/">
-                        <img src={Linkedin} alt="Logo do Linkedin" />
-                    </a>
-                    <a href="https://www.instagram.com/amo.ifal/">
-                        <img src={Instagram} alt="Logo do Instagram" />
-                    </a>
+        <footer className={FooterStyle.footer}>
+            <div className={FooterStyle.parceiros}>
+                <h3>Parceiros</h3>
+                <div className={FooterStyle.apoio}>
+                    <img src={ifal} alt="Logo do IFAL" className={FooterStyle.one}/>
+                    <img src={fapeal} alt="Logo da Fapeal" />
+                    <img src={fapealsecti} alt="Logo da Secti" />
+                    <img src={pibicjr} alt="Logo da Pibic Jr." />
+                    <img src={cpsoftware} alt="Logo da CPSoftware" />
                 </div>
             </div>
-        </div>
 
+            <div className={FooterStyle.contato}>
+                <h3>Contato</h3>
+                <div className={FooterStyle.midias}>
+                    <img src={facebook} alt="Logo do FaceBook" />
+                    <img src={instagram} alt="Logo do instagram" />
+                    <img src={linkedin} alt="Logo do linkedin" />
+                    <img src={twitter} alt="Logo do twitter" />
+                </div>
+            </div>
+        </footer>
         </>
-    )
+    );
 }

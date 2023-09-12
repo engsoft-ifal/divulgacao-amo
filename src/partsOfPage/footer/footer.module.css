@@ -1,45 +1,41 @@
 .footer {
-    background: var(--white);
-    color: black;
-}
-
-.parceiros .logos,
-.contacteNos .informations {
-    background: var(--back-blue);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding: 20px 0;
-    color: var(--white);
-}
-
-.parceiros .logos > img {
-    width: 10%;
-    max-width: 120px;
-}
-
-.contacteNos .informations {
-    flex-direction: column; 
-    gap: 30px;
-}
-
-.parceiros .boxText,
-.contacteNos .boxText {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
+    padding: 60px 0;
+}
+
+.contato, .parceiros {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+}
+
+.apoio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     align-items: center;
-    background: var(--white);
-    padding: 20px 0;
 }
 
-.contacteNos .informations .midias a img {
-    filter: invert(0.8);
-    transform: scale(1.5em);
-    transition: 0.3s ease-in-out;
+.apoio .one {
+    grid-row: 1 / 3;
+    width: 100px;
 }
 
-.contacteNos .informations .midias a img:hover {
+.apoio img {
+    width: 50px;
+}
+
+.contato .midias {
     filter: invert(1);
 }
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
