@@ -4,6 +4,8 @@
     justify-content: center;
     width: 100%;
     padding: 20px 32px;
+    gap: 64px;
+    z-index: 2;
 }
 
 .nav {
@@ -14,13 +16,16 @@
     width: 100%;
 }
 
+/* Logo (nav) */
 .logoBar {
     display: flex;
     gap: 4rem;
 }
 
-/* Logo (nav) */
-
+.openNav,
+.closebtn {
+    display: none;
+}
 
 /* Links navegação (nav) */
 .ul {
@@ -79,8 +84,97 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .ul,
+    .nav {
+        width: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        background-color: #0A0D16;
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+
+
+    .ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #818181;
+        border-radius: 3px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background-color: #81818164;
+    }
+
+    .openNav,
+    .closebtn {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    .closebtn {
+        font-size: 3em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 16px;
+        border-radius: 8px;
+        padding: 0px 12px;
+        transition: 0.3s ease;
+    }
+
+    .closebtn:hover {
+        background: #81818164;
+        border-radius: 16px;
+    }
+
     .loginRegister {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .loginRegister > a:first-child,
+    .loginRegister > a:last-child {
+        font-weight: normal;
+    }
+
+    .loginRegister > a:first-child img {
         display: none;
+    }
+    
+    .loginRegister > a:hover:first-child {
+        color: var(--white);
+        transform: translateY(0px);
+    }
+
+    .loginRegister > a:last-child {
+        border: none;
+        box-shadow: none;
+    }
+    
+    .loginRegister > a:hover:last-child {
+        border: none;
+        background: #81818164;
     }
 } 
