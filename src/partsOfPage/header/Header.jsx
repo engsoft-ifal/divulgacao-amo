@@ -30,13 +30,13 @@ export function Header() {
                     
                 </div>
                 {/* Links para a página de Login e Registro */}
-                <div className={HeaderStyles.loginRegister}>
+                {/* <div className={HeaderStyles.loginRegister}>
                     <a href="#">
                         <img src={IconLogin} alt="Icone de Login" />
                         Entrar
                     </a>
                     <a href="#">Cadastrar</a>
-                </div>
+                </div> */}
             </nav>
 
             <span className={HeaderStyles.openNav} onClick={openNav}>&#9776;</span>

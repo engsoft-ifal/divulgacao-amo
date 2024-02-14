@@ -12,11 +12,15 @@ import 'swiper/css/navigation'; //setinha de navegação
 import 'swiper/css/pagination'; //bolinhas
 import 'swiper/css/scrollbar';
 
-import n1 from '../../../public/carrossel/noticia5.png';
-import n2 from '../../../public/carrossel/noticia4.png';
-import n3 from '../../../public/carrossel/noticia3.png';
-import n4 from '../../../public/carrossel/noticia2.png';
-import n5 from '../../../public/carrossel/noticia1.png';
+import n1 from '../../../public/carrossel/foto1.jpg';
+import n2 from '../../../Treinamento interno - informations/Turma/Alunos - Array e Matrizes.jpeg';
+import n3 from '../../../public/carrossel/te1.jpg';
+import n4 from '../../../Treinamento interno - informations/Turma/Aula introdutoria.jpg';
+import n5 from '../../../Treinamento interno - informations/Turma/Aula - Listas Encadeadas .jpeg';
+import n6 from '../../../public/carrossel/te2.jpg';
+import n7 from '../../../Treinamento interno - informations/Turma/Aula - Array e Matrizes.jpeg';
+import n8 from '../../../Treinamento interno - informations/Turma/Aula - Listas Encadeadas 1.2.jpeg';
+import n9 from '../../../public/carrossel/te3.jpg';
 
 export function Noticias() {
     const imagens = [
@@ -24,7 +28,11 @@ export function Noticias() {
         { id: 2, image: n2 },
         { id: 3, image: n3 },
         { id: 4, image: n4 },
-        { id: 5, image: n5 }
+        { id: 5, image: n5 },
+        { id: 6, image: n6 },
+        { id: 7, image: n7 },
+        { id: 8, image: n8 },
+        { id: 9, image: n9 }
       ];
       
     const [slidePerView, setSlidesPerView] = useState(2);
@@ -48,8 +56,8 @@ export function Noticias() {
     <section className={NoticiaStyles.noticias} id="noticias">
         <div className={NoticiaStyles.text}>
         <h2>
-            VEJA AS <br />
-            NOTÍCIAS!
+            VEJA NOSSOS <br />
+            TRABALHOS!
         </h2>
         <p>Descubra informações sobre o mundo da Informática.</p>
         </div>
