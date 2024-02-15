@@ -29,10 +29,10 @@ export function Footer() {
             <div className={FooterStyle.contato}>
                 <h3>Contato</h3>
                 <div className={FooterStyle.midias}>
-                    <a href="https://www.facebook.com/amoifal/"><img src={facebook} alt="Logo do FaceBook" /></a>
-                    <a href="https://www.instagram.com/amo.ifal/"><img src={instagram} alt="Logo do instagram" /></a>
-                    <a href="https://www.linkedin.com/in/amoifal/"><img src={linkedin} alt="Logo do linkedin" /></a>
-                    <a href="https://twitter.com/amo_mapa56230"><img src={twitter} alt="Logo do twitter" /></a>
+                    <a href="https://www.facebook.com/amoifal/" target='_blank'><img src={facebook} alt="Logo do FaceBook" /></a>
+                    <a href="https://www.instagram.com/amo.ifal/" target='_blank'><img src={instagram} alt="Logo do instagram" /></a>
+                    <a href="https://www.linkedin.com/in/amoifal/" target='_blank'><img src={linkedin} alt="Logo do linkedin" /></a>
+                    <a href="https://twitter.com/amo_mapa56230" target='_blank'><img src={twitter} alt="Logo do twitter" /></a>
                 </div>
             </div>
         </footer>

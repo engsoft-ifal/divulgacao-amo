@@ -1,26 +1,23 @@
 /* Nav */
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     padding: 20px 32px;
-    gap: 64px;
     z-index: 2;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* .nav {
     max-width: 1440px;
     width: 100%;
-}
+} */
 
 /* Logo (nav) */
-.logoBar {
+/* .logoBar {
     display: flex;
     gap: 4rem;
-}
+} */
 
 .openNav,
 .closebtn {

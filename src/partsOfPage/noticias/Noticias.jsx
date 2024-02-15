@@ -7,19 +7,20 @@ import { Swiper, SwiperSlide} from 'swiper/react';
 // Biblioteca para o carrossel (Swiper)
 import { register } from 'swiper/element/bundle';
 register();
+
 import 'swiper/css'; //css padrao
 import 'swiper/css/navigation'; //setinha de navegação
 import 'swiper/css/pagination'; //bolinhas
 import 'swiper/css/scrollbar';
 
 import n1 from '../../../public/carrossel/foto1.jpg';
-import n2 from '../../../Treinamento interno - informations/Turma/Alunos - Array e Matrizes.jpeg';
+import n2 from '../../../public/carrossel/Alunos - Array e Matrizes.jpeg';
 import n3 from '../../../public/carrossel/te1.jpg';
-import n4 from '../../../Treinamento interno - informations/Turma/Aula introdutoria.jpg';
-import n5 from '../../../Treinamento interno - informations/Turma/Aula - Listas Encadeadas .jpeg';
+import n4 from '../../../public/carrossel/Aula introdutoria.jpg';
+import n5 from '../../../public/carrossel/Aula - Listas Encadeadas .jpeg';
 import n6 from '../../../public/carrossel/te2.jpg';
-import n7 from '../../../Treinamento interno - informations/Turma/Aula - Array e Matrizes.jpeg';
-import n8 from '../../../Treinamento interno - informations/Turma/Aula - Listas Encadeadas 1.2.jpeg';
+import n7 from '../../../public/carrossel/Aula - Array e Matrizes.jpeg';
+import n8 from '../../../public/carrossel/Aula - Array e Matrizes 1.2.jpeg';
 import n9 from '../../../public/carrossel/te3.jpg';
 
 export function Noticias() {
@@ -40,9 +41,9 @@ export function Noticias() {
     useEffect(() => {
         function handleResize() {
             if (window.innerWidth <= 900)
-            setSlidesPerView(1);
+                setSlidesPerView(1);
             else
-            setSlidesPerView(2);
+                setSlidesPerView(2);
         }
 
         handleResize();
