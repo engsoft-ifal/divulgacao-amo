@@ -7,7 +7,7 @@ import cpsoftware from '../../../public/apoio/cpsoftware.png';
 import facebook from '../../../public/midias/facebook.svg';
 import instagram from '../../../public/midias/instagram.svg';
 import linkedin from '../../../public/midias/linkedin.svg';
-import twitter from '../../../public/midias/twitter.svg';
+import youtube from '../../../public/midias/youtube.svg' 
 
 import FooterStyle from './footer.module.css'
 
@@ -32,7 +32,7 @@ export function Footer() {
                     <a href="https://www.facebook.com/amoifal/" target='_blank'><img src={facebook} alt="Logo do FaceBook" /></a>
                     <a href="https://www.instagram.com/amo.ifal/" target='_blank'><img src={instagram} alt="Logo do instagram" /></a>
                     <a href="https://www.linkedin.com/in/amoifal/" target='_blank'><img src={linkedin} alt="Logo do linkedin" /></a>
-                    <a href="https://twitter.com/amo_mapa56230" target='_blank'><img src={twitter} alt="Logo do twitter" /></a>
+                    <a href="https://www.youtube.com/channel/UCvKTrsUI8pFbvhZ09IBylPA" target='_blank'><img src={youtube} alt="Logo do youtube" /></a>
                 </div>
             </div>
         </footer>

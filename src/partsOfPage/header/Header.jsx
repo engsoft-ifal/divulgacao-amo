@@ -23,7 +23,8 @@ export function Header() {
 
                     {/* Links do próprio site */}
                     <ul className={HeaderStyles.ul}>
-                        <li><a href="#treinamentos">Treinamento</a></li>
+                        <li><a href="https://github.com/engsoft-ifal/treinamento-interno-amo" target="_blank">Treinamento Interno</a></li>
+                        <li><a href="https://github.com/engsoft-ifal/treinamento-externo-amo" target="_blank">Treinamento Externo</a></li>
                         <li><a href="#noticias">Notícias</a></li>
                         <li><a href="#projeto">O Projeto</a></li>
                     </ul>

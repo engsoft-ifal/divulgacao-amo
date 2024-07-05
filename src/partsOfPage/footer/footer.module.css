@@ -43,6 +43,14 @@
     transform: scale(1.05);
 }
 
+.contato .midias a img {
+    width: 32px;
+}
+
+.contato .midias a:last-child img {
+    filter: invert();
+}
+
 @media only screen and (max-width: 500px) {
     .footer {
         flex-direction: column;
